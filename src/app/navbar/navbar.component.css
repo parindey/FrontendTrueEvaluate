@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .ml40{
+    margin-left: 40px;
+  }
+
+  .mr40{
+    margin-right: 40px;
+  }
+
+  .mb40{
+    margin-bottom: 40px;
+  }
+
+  .mt40{
+    margin-top: 40px;
+  }
