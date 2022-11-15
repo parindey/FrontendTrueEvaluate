@@ -1,0 +1,144 @@
+<app-menu-bar></app-menu-bar>
+<!-- <div>
+
+ <img class="addimg" src="assets\images\white-question.webp" style="width: 1000px">
+ <div class=add>
+  <form (ngSubmit)="searchQuestion()" style="width: 500px; margin: auto;">
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Course</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="course_id"[(ngModel)]="course_id">
+        <option value="101">Java</option>
+        <option value="102">Python</option>
+        <option value="103">.Net</option>
+        <option value="104">C</option>
+        <option value="105">PHP</option>
+        <option value="106">C++</option>
+      </select>
+
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Levels: </label>
+      <select class="form-control" id="exampleFormControlSelect1" name="level_id" [(ngModel)]="level_id">
+        <option value="1">1</option>
+
+      </select>
+    </div>
+
+
+
+     <div>
+      <table class="table" *ngIf="question_list != null">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Question ID</th>
+            <th scope="col">Question</th>
+            <th scope="col">Remove Question</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of question_list">
+            <td>{{item.question_id}}</td>
+            <td>{{item.question}}</td>
+            <td><button type="submit" class="button" (click)="removingQuestion(item.question_id)">Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="submit" class="button">Submit</button> -->
+
+
+
+
+
+
+
+    <section
+    class="vh-100 bg-image"
+    style="
+      background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+    "
+  >
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Remove Question</h2>
+
+                <form  (ngSubmit)="searchQuestion()">
+                  <div class="form-group">
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="course_id" [(ngModel)]="course_id">
+                        <option disabled selected>Select the course</option>
+                        <option value="101">Java</option>
+                        <option value="102">Python</option>
+                        <option value="103">.Net</option>
+                        <option value="104">C</option>
+                        <option value="105">Php</option>
+                        <option value="106">C++</option>
+                      </select>
+                    </div>
+
+
+
+
+
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="level_id" [(ngModel)]="level_id">
+                        <option value="1">1</option> </select>
+                    </div>
+
+                    <div >
+                      <table class="table" *ngIf="question_list != null">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Question ID</th>
+                            <th scope="col">Question</th>
+                            <th scope="col">Remove Question</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of question_list">
+                            <td>{{item.question_id}}</td>
+                            <td>{{item.question}}</td>
+                            <td><button type="submit" class="btn btn-primary" (click)="removingQuestion(item.question_id)">Remove</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-center">
+                      <button
+                        type="submit"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                      >Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

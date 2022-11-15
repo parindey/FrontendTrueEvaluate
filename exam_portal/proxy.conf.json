@@ -1,0 +1,6 @@
+{
+"/api":{
+"target": "http://localhost:8054/auth/admin-restapi/admin_login",
+"secure": false
+}
+}
